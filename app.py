@@ -89,6 +89,12 @@ st.write(f"Selected level: {level}")
 
 st.subheader("Modification 3: String Methods")
 
+st.markdown("**Original**")
+# Text input
+name = st.text_input("Enter your name", "Type here...")
+if st.button("[Original] Submit"):
+   st.success(f"Hello, {name.title()}!")
+
 st.markdown("**After Modification**")
 
 # Text input with string processing
