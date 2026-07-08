@@ -4,6 +4,26 @@ from PIL import Image
 # App title
 st.title("Simple Streamlit Demo")
 
+# --- Add these functions after the import lines ---
+
+def generate_greeting(name, gender):
+    """Return a personalised greeting based on name and gender."""
+    title = "Mr." if gender == "Male" else "Ms."
+    greeting = f"Welcome {title} {name.title()}!"
+    return greeting
+
+def get_level_description(level):
+    """Return a word description for the numeric level."""
+    descriptions = {
+        1: "Beginner",
+        2: "Elementary",
+        3: "Intermediate",
+        4: "Advanced",
+        5: "Expert"
+    }
+    return descriptions[level]
+
+
 # Header and subheader
 st.header("Welcome to My App")
 st.subheader("An interactive Python web app")
@@ -111,7 +131,7 @@ if st.button("Submit"):
             st.write(f"Starts with 'A': {name.upper().startswith('A')}")
 
 
-st.subheader("Modification 4: Dictionaries and Selection")
+st.subheader("Modification 4: Functions")
 st.subheader("Modification 5: Dictionaries and Selection")
 st.subheader("Modification 6: Dictionaries and Selection")
 
