@@ -34,6 +34,7 @@ if gender == "Male":
 else:
     st.write("You have chosen Female")
 
+st.subheader("My Hobbies")
 # Selectbox - using a list variable instead of hardcoded values
 hobbies = ["Dancing", "Reading", "Sports", "Gaming",
            "Cooking", "Music", "Photography", "Gardening"]
