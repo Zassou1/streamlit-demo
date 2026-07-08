@@ -86,13 +86,18 @@ else:
 level = st.slider("Choose a level", 1, 5)
 st.write(f"Selected level: {level}")
 
+
+
+st.subheader("Modification 3: String Methods")
+
+st.markdown("**Original**")
 # Text input
 name = st.text_input("Enter your name", "Type here...")
 if st.button("Submit"):
    st.success(f"Hello, {name.title()}!")
 
-st.subheader("Modification 3: String Methods")
 
+st.markdown("**After Modification**")
 # Text input with string processing
 name = st.text_input("Enter your name", "Type here...")
 
@@ -113,6 +118,7 @@ if st.button("Submit"):
             st.write(f"Number of characters: {len(name)}")
             st.write(f"Your name reversed: {name[::-1]}")
             st.write(f"Starts with 'A': {name.upper().startswith('A')}")
+
 
 
 
