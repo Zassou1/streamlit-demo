@@ -48,7 +48,6 @@ selected = st.multiselect("Pick all your hobbies:", hobbies)
 # Loop through the selected hobbies and display each one
 if selected:
     st.write(f"You selected {len(selected)} hobbies:")
-    st.write(f"  - {hobby}")
     for h in selected:
         st.write(f"  - {h}")
 else:
