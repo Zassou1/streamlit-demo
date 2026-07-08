@@ -87,13 +87,6 @@ level = st.slider("Choose a level", 1, 5)
 st.write(f"Selected level: {level}")
 
 
-
-
-st.subheader("Modification 4: Dictionaries and Selection")
-st.subheader("Modification 5: Dictionaries and Selection")
-st.subheader("Modification 6: Dictionaries and Selection")
-
-
 st.subheader("Modification 3: String Methods")
 
 st.markdown("**Original**")
@@ -104,4 +97,13 @@ if st.button("Submit"):
 
 
 st.markdown("**After Modification**")
+
+
+
+
+
+st.subheader("Modification 4: Dictionaries and Selection")
+st.subheader("Modification 5: Dictionaries and Selection")
+st.subheader("Modification 6: Dictionaries and Selection")
+
 
