@@ -104,6 +104,12 @@ else:
 level = st.slider("Choose a level", 1, 5)
 st.write(f"Your level: {get_level_description(level)}")
 
+# Text input
+name = st.text_input("Enter your name", "Type here...")
+if st.button("Submit"):
+    # Call the function with name and gender as arguments
+    st.success(generate_greeting(name, gender))
+
 
 st.subheader("Modification 3: String Methods")
 
