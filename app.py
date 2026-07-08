@@ -91,32 +91,32 @@ st.subheader("Modification 3: String Methods")
 
 st.markdown("**Original**")
 # Text input
-name = st.text_input("Enter your name", "Type here...")
-if st.button("[Original] Submit"):
-   st.success(f"Hello, {name.title()}!")
+name_org = st.text_input("Enter your name", "Type here...")
+if st.button("Submit"):
+   st.success(f"Hello, {name_org.title()}!")
 
 st.markdown("**After Modification**")
 
 # Text input with string processing
-name = st.text_input("Enter your name", "Type here...")
+name_mod3 = st.text_input("Enter your name", "Type here...")
 
 if st.button("Submit"):
     # Check if the user has typed a real name
-    if name == "Type here..." or name == "":
+    if name_mod3 == "Type here..." or name_mod3 == "":
         st.warning("Please enter your name first.")
     else:
         # Validate: check if name contains only letters and spaces
-        name_letters = name.replace(" ", "")
+        name_letters = name_mod3.replace(" ", "")
         if not name_letters.isalpha():
             st.error("Name should contain letters only!")
         else:
             # Display string method results
-            st.success(f"Hello, {name.title()}!")
-            st.write(f"Uppercase: {name.upper()}")
-            st.write(f"Lowercase: {name.lower()}")
-            st.write(f"Number of characters: {len(name)}")
-            st.write(f"Your name reversed: {name[::-1]}")
-            st.write(f"Starts with 'A': {name.upper().startswith('A')}")
+            st.success(f"Hello, {name_mod3.title()}!")
+            st.write(f"Uppercase: {name_mod3.upper()}")
+            st.write(f"Lowercase: {name_mod3.lower()}")
+            st.write(f"Number of characters: {len(name_mod3)}")
+            st.write(f"Your name reversed: {name_mod3[::-1]}")
+            st.write(f"Starts with 'A': {name_mod3.upper().startswith('A')}")
 
 
 
