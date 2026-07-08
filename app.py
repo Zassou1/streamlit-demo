@@ -105,7 +105,7 @@ level = st.slider("Choose a level", 1, 5)
 st.write(f"Your level: {get_level_description(level)}")
 
 # Text input
-name1 = st.text_input("Enter your name", "Type here...")
+name1 = st.text_input("Enter your name1", "Type here...")
 if st.button("Submit1"):
     # Call the function with name and gender as arguments
     st.success(generate_greeting(name1, gender))
