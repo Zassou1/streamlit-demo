@@ -45,14 +45,14 @@ st.image(img, width=200)
 # Checkbox
 if st.checkbox("Show message"):
    st.write("Checkbox is checked!")
-   
+
+st.subheader("Modification 4: Functions")
 # Radio button
 gender = st.radio("Select Gender:", ['Male', 'Female'])
-st.success(f"Selected: {gender}")
-if gender == "Male":
-    st.write("You have chosen Male")
-else:
-    st.write("You have chosen Female")
+
+# Use the generate_greeting function instead of if/else
+# (We need the name variable too, so this will work with the text input below)
+
 
 st.subheader("My Hobbies")
 st.subheader("Modification 1: Lists and Loops")
@@ -131,7 +131,7 @@ if st.button("Submit"):
             st.write(f"Starts with 'A': {name.upper().startswith('A')}")
 
 
-st.subheader("Modification 4: Functions")
+
 st.subheader("Modification 5: Dictionaries and Selection")
 st.subheader("Modification 6: Dictionaries and Selection")
 
