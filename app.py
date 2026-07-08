@@ -38,6 +38,16 @@ else:
 hobby = st.selectbox("Select a Hobby:", ['Dancing', 'Reading', 'Sports'])
 st.write("Your hobby is:", hobby)
 
+# Selectbox - using a list variable instead of hardcoded values
+hobbies = ["Dancing", "Reading", "Sports", "Gaming",
+           "Cooking", "Music", "Photography", "Gardening"]
+
+hobby = st.selectbox("Select your main hobby:", hobbies)
+st.write("Your main hobby is:", hobby)
+
+
+
+
 # Slider
 level = st.slider("Choose a level", 1, 5)
 st.write(f"Selected level: {level}")
