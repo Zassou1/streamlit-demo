@@ -100,7 +100,7 @@ st.markdown("**After Modification**")
 # Text input with string processing
 name_mod3 = st.text_input("Enter your name", "Type here...")
 
-if st.button("Submit"):
+if st.button("Submit Again"):
     # Check if the user has typed a real name
     if name_mod3 == "Type here..." or name_mod3 == "":
         st.warning("Please enter your name first.")
